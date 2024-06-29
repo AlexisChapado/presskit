@@ -1,1 +1,103 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.mainBienvenida {
+  background-color: rgb(29, 28, 28);
+}
+.mainBienvenida .contenedorBienvenida {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../img/fondo-inicio.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida {
+  background-color: rgba(0, 0, 0, 0.342);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre {
+  width: 100%;
+  height: 100vh;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorGenero {
+  width: 100%;
+  height: 5vh;
+  background-color: rgba(29, 28, 28, 0.459);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 57vh;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorGenero .genero {
+  font-size: 2rem;
+  font-family: letraTexto-Extralight;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorNombre {
+  display: flex;
+  justify-content: center;
+  padding-top: 20rem;
+}
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorNombre .imagenLogo2 {
+  width: 90%;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .contenedorLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .contenedorLogo .logo .imgLogo {
+  width: 15rem;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .contenedorLogo .logo .imgLogo img {
+  box-shadow: 5px 5px 10px black;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav .liNavBienvenida {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: black;
+}
+
+@font-face {
+  font-family: letraLogo;
+  src: url(../../fonts/letraLogo.otf);
+}
+@font-face {
+  font-family: letraTexto-Extralight;
+  src: url(../../fonts/letraTexto-Extralight.ttf);
+}
+@font-face {
+  font-family: letraTexto-Hardline;
+  src: url(../../fonts/letraTexto-Hardline.ttf);
+}/*# sourceMappingURL=style.css.map */

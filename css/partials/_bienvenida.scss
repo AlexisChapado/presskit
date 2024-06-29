@@ -1,0 +1,162 @@
+.mainBienvenida {
+    
+
+    background-color: $colorNav;
+
+    
+
+    .contenedorBienvenida {
+
+        width: 100%;
+        height: 100vh;
+
+        display: grid;
+
+        grid-template-columns: 4fr 1fr;
+
+        
+       
+
+        
+        .contenedorFondo {
+
+                width: 100%;
+                height: 100vh;
+                background-image: url(../../img/fondo-inicio.jpg);
+                background-position: center;
+                background-size: cover;
+
+                
+                
+            .fondoBienvenida{
+
+                background-color: rgba(0, 0, 0, 0.342);
+                backdrop-filter: blur(4px);
+                
+
+
+                .cajaNombre {
+
+                    width: 100%;
+                    height: 100vh; 
+                    
+                    
+                    .contenedorGenero {
+
+                        width: 100%;
+                        height: 5vh;
+                        background-color: rgba(29, 28, 28, 0.459);
+
+                        padding: 1rem;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        position: absolute;
+
+                        margin-top: 57vh;
+
+                                              
+    
+                        .genero {                      
+                            
+                            font-size: 2rem;
+                            font-family: $letraTexto-Extralight;
+    
+    
+                        }
+                    }   
+
+                    .contenedorNombre {
+
+                        display: flex;
+                        justify-content: center;
+
+                        padding-top: 20rem;
+
+                        
+                        
+
+                        .imagenLogo2 {
+
+                            width: 90%;                         
+                           
+                        }                                       
+                    }
+                }
+            }
+        }
+        
+        .contenedorNav {
+            width: 100%;
+            height: 100vh;
+
+            z-index: 2;
+           
+            
+
+            
+
+
+            .navBienvenida {
+
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                
+                .contenedorLogo {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .logo {
+                        
+
+                        .imgLogo{
+                            width: 15rem;
+
+                            img {
+                            box-shadow: 5px 5px 10px black;
+
+                            }
+
+                            
+
+                        }
+                    }
+                }
+                
+
+
+                .barraNav{
+                    margin-top: 10vh;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    
+
+                    .liNavBienvenida{
+
+                        padding: 1rem;
+
+                        font-size: 1.7rem;
+                        
+                        color: black;
+
+                        
+                        
+
+                        
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
