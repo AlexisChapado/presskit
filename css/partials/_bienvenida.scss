@@ -55,7 +55,7 @@
                         
                         position: absolute;
 
-                        margin-top: 57vh;
+                        margin-top: 60vh;
 
                                               
     
@@ -70,19 +70,21 @@
 
                     .contenedorNombre {
 
+                        width: 100%;
+                        height: 100vh;
+
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
-                        padding-top: 20rem;
+                        font-family: $letraLogo;
+                        font-size: 6rem;
 
-                        
-                        
-
-                        .imagenLogo2 {
-
-                            width: 90%;                         
-                           
-                        }                                       
+                        .logoNombre {
+                            
+                            text-shadow: 5px 5px 10px black;
+                        }
+                       
                     }
                 }
             }

@@ -41,19 +41,23 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin-top: 57vh;
+  margin-top: 60vh;
 }
 .mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorGenero .genero {
   font-size: 2rem;
   font-family: letraTexto-Extralight;
 }
 .mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorNombre {
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 20rem;
+  align-items: center;
+  font-family: letraLogo;
+  font-size: 6rem;
 }
-.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorNombre .imagenLogo2 {
-  width: 90%;
+.mainBienvenida .contenedorBienvenida .contenedorFondo .fondoBienvenida .cajaNombre .contenedorNombre .logoNombre {
+  text-shadow: 5px 5px 10px black;
 }
 .mainBienvenida .contenedorBienvenida .contenedorNav {
   width: 100%;
@@ -91,7 +95,7 @@
 
 @font-face {
   font-family: letraLogo;
-  src: url(../../fonts/letraLogo.otf);
+  src: url(../../fonts/letraLogo.ttf);
 }
 @font-face {
   font-family: letraTexto-Extralight;
