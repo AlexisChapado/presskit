@@ -104,4 +104,16 @@
 @font-face {
   font-family: letraTexto-Hardline;
   src: url(../../fonts/letraTexto-Hardline.ttf);
+}
+.inicioNav .contenedorInicioNav .ulInicio {
+  background-color: rgb(29, 28, 28);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inicioNav .contenedorInicioNav .ulInicio .li-Inicio {
+  padding: 1rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

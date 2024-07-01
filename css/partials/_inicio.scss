@@ -1,0 +1,33 @@
+.inicioNav {
+
+    .contenedorInicioNav {
+
+
+        .logoInicio {
+
+
+        }
+
+        .ulInicio {
+            
+            background-color: $colorNav;
+
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        
+            justify-content: center;
+            align-items: center;
+
+            
+        
+            .li-Inicio{
+
+                padding: 1rem;
+
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+}   
