@@ -1,33 +1,144 @@
 .inicioNav {
+    width: 100%;
 
-    .contenedorInicioNav {
+    display: grid;
+    grid-column: 2fr 2fr;
+    position: fixed;
+    z-index: 2;
 
+    .contenedorInicioLogo{
 
-        .logoInicio {
+        width: 30%;
+    
+        background-color: $colorNav2;
+    
+        .contenedorLogoInicio {
+    
+            img {
 
-
-        }
-
-        .ulInicio {
-            
-            background-color: $colorNav;
-
-            width: 100%;
-            height: 10vh;
-            display: flex;
-        
-            justify-content: center;
-            align-items: center;
-
-            
-        
-            .li-Inicio{
-
-                padding: 1rem;
-
-                font-size: 1.5rem;
+                padding: 10px;
+    
+                width: 7rem;
+                position: fixed;
+               
             }
         }
-        
     }
-}   
+    
+    
+    .contenedorInicioNav {
+    
+        width: 100%;
+        height: 10vh;
+    
+        background-color: $colorNav2;
+
+        
+    
+    
+        .ulInicio {
+    
+            width: 100%;
+
+            padding: 1rem;
+    
+            display: flex;
+            justify-content: center;
+            
+            
+            
+            .liInicio {           
+                           
+                padding: 1rem;
+                font-size: 1.7rem;
+                
+    
+            }
+    
+    
+        }
+    }
+}
+
+/*************************************************************************************/
+/*------------------------------------MAIN-------------------------------------------*/
+/*************************************************************************************/
+
+
+.contenedorFrase {
+
+    width: 100%;
+    height: 80vh;
+
+    background-image: url(../../img/fondo-inicio2.jpeg);
+    background-size: cover;
+    
+    .inicioFrase {
+        width: 100%;
+        height: 80vh;
+
+        background-color: rgba(100, 99, 99, 0.479);
+        backdrop-filter: blur(3px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2{            
+
+            padding: 3rem;
+            font-size: 4.5rem;
+            text-align: center;
+            font-family: $letraTexto-Hardline;
+            text-shadow: 3px 3px 2px black;
+
+        }
+    
+
+    }
+    
+    
+}
+
+.contenedorInformacionSet{
+
+    width: 100%;
+    height: 100vh;
+    background-color: $colorNav;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    .informacionSet {
+        width: 70%;
+        height: auto;
+
+        padding: 2rem;
+        border: 0px;
+        border-bottom: 1px;
+        border-bottom-color: rgb(0, 0, 255);
+        border-style: solid;
+
+        .h2Inicio {
+
+            padding: 2rem;
+            font-size: 3rem;
+            text-align: center;
+            
+        }
+
+        .textoInformacion {
+
+            
+            text-align: center;
+            font-size: 2rem;
+        }
+
+    }
+
+    
+
+}

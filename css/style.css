@@ -105,15 +105,88 @@
   font-family: letraTexto-Hardline;
   src: url(../../fonts/letraTexto-Hardline.ttf);
 }
-.inicioNav .contenedorInicioNav .ulInicio {
-  background-color: rgb(29, 28, 28);
+.inicioNav {
+  width: 100%;
+  display: grid;
+  grid-column: 2fr 2fr;
+  position: fixed;
+  z-index: 2;
+}
+.inicioNav .contenedorInicioLogo {
+  width: 30%;
+  background-color: rgba(29, 28, 28, 0.884);
+}
+.inicioNav .contenedorInicioLogo .contenedorLogoInicio img {
+  padding: 10px;
+  width: 7rem;
+  position: fixed;
+}
+.inicioNav .contenedorInicioNav {
   width: 100%;
   height: 10vh;
+  background-color: rgba(29, 28, 28, 0.884);
+}
+.inicioNav .contenedorInicioNav .ulInicio {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.inicioNav .contenedorInicioNav .ulInicio .liInicio {
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+/*************************************************************************************/
+/*------------------------------------MAIN-------------------------------------------*/
+/*************************************************************************************/
+.contenedorFrase {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../img/fondo-inicio2.jpeg);
+  background-size: cover;
+}
+.contenedorFrase .inicioFrase {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(100, 99, 99, 0.479);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.inicioNav .contenedorInicioNav .ulInicio .li-Inicio {
-  padding: 1rem;
-  font-size: 1.5rem;
+.contenedorFrase .inicioFrase h2 {
+  padding: 3rem;
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: letraTexto-Hardline;
+  text-shadow: 3px 3px 2px black;
+}
+
+.contenedorInformacionSet {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorInformacionSet .informacionSet {
+  width: 70%;
+  height: auto;
+  padding: 2rem;
+  border: 0px;
+  border-bottom: 1px;
+  border-bottom-color: rgb(0, 0, 255);
+  border-style: solid;
+}
+.contenedorInformacionSet .informacionSet .h2Inicio {
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.contenedorInformacionSet .informacionSet .textoInformacion {
+  text-align: center;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
