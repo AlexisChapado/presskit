@@ -6,6 +6,17 @@
     position: fixed;
     z-index: 2;
 
+    box-shadow: 2px 2px 10px black;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-bottom-color: rgb(0, 0, 170);
+
+    
+
     .contenedorInicioLogo{
 
         width: 30%;
@@ -68,36 +79,34 @@
 .contenedorFrase {
 
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 
     background-image: url(../../img/fondo-inicio2.jpeg);
     background-size: cover;
     
     .inicioFrase {
         width: 100%;
-        height: 80vh;
+        height: 90vh;
 
-        background-color: rgba(100, 99, 99, 0.479);
-        backdrop-filter: blur(3px);
+        background-color: rgba(17, 17, 17, 0.432);
+        backdrop-filter: blur(10px);
 
         display: flex;
         justify-content: center;
         align-items: center;
 
         h2{            
-
+            width: 90%;
             padding: 3rem;
-            font-size: 4.5rem;
+            font-size: 6rem;
             text-align: center;
             font-family: $letraTexto-Hardline;
             text-shadow: 3px 3px 2px black;
 
         }
     
-
     }
-    
-    
+     
 }
 
 .contenedorInformacionSet{
@@ -113,7 +122,7 @@
 
 
     .informacionSet {
-        width: 70%;
+        width: 80%;
         height: auto;
 
         padding: 2rem;
@@ -125,20 +134,299 @@
         .h2Inicio {
 
             padding: 2rem;
-            font-size: 3rem;
+            font-size: 4rem;
             text-align: center;
+            font-family: $Arsenal;
             
         }
 
         .textoInformacion {
 
-            
+            font-family: $letraTexto-Extralight;
             text-align: center;
-            font-size: 2rem;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px black;
         }
 
     }
 
     
 
+}
+
+/*************************************************************************************/
+/*----------------------------------SECCION 2----------------------------------------*/
+/*************************************************************************************/
+
+
+.seccion2Inicio{
+
+    width: 100%;
+    height: 150vh;
+
+    background-color: #212121;
+
+    display: grid;
+    grid-template-columns:  repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    ". caja1 caja1  caja3  caja4 ."
+    ". caja1 caja1  caja10 caja10 . "
+    ". linea1  linea1 caja10 caja10 ."
+    ". caja13 caja13 caja13 caja13 .";
+
+    .contenedorResumen {
+
+        grid-area: caja1;
+
+        width: 100%;
+        height: auto;
+
+        padding: 10px;
+        
+        text-align: center;
+        font-size: 2.5rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        .resumenRequerimiento {
+
+            width: 100%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0px;
+            border-right: 1px;
+            border-left: 1px;
+            border-style: solid;
+
+            
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+            }
+
+            button{
+                background-color: #212121;
+                text-shadow: 1px 1px 2px #212121;
+
+                padding: 0.7rem;
+                border-radius: 10px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+
+
+   .contenedorSets{
+
+        grid-area: caja10;
+
+        width: 100%;
+        height: auto;
+
+        padding: 10px;
+        
+        text-align: center;
+        font-size: 2.5rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .resumenSets{
+            width: 100%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0px;
+            border-top: 1px;
+            border-bottom: 1px;
+            border-style: solid;
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+            }
+
+            button{
+                background-color: #212121;
+                text-shadow: 1px 1px 2px #212121;
+
+                padding: 0.7rem;
+                border-radius: 10px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+
+   }
+   
+    .contenedorLinea {
+
+        grid-area: linea1;
+        width: 100%;
+        height: auto;
+
+        margin: 1rem;
+
+    
+        .linea{
+            width: 100%;
+            height: 10vh;
+            border-bottom: 1px;
+            border-top: 1px;
+            border-left: 0;
+            border-style: solid;
+            border-right: 0;
+            border-color: blue;
+
+            
+        }
+
+
+    }
+
+    
+
+   .contenedorBiografia {
+
+        grid-area: caja13;
+
+        width: 100%;
+        height: auto;
+
+        padding: 10px;
+            
+        text-align: center;
+        font-size: 2.5rem;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .resumenBiografia{
+
+            width: 100%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0px;
+            border-left: 1px;
+            border-style: solid;
+            
+
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+            }
+
+            button{
+                background-color: #212121;
+                text-shadow: 1px 1px 2px #212121;
+
+                padding: 0.7rem;
+                border-radius: 10px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.contenedorFooter {
+
+    width: 100%;
+    height: 25vh;
+
+    background-color: $colorNav;
+
+    .footer{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:0.5fr 1fr 1fr  ;
+        grid-template-areas: 
+        "datos1   datos1   datos1"
+        "columna1 columna2 columna3"
+        "columna4 columna2 columna6";
+
+        .logosRedes {
+
+            width: 100%;
+
+        }
+
+        .informacionExtraFooter {
+
+            width: 100%;
+
+        }
+
+        .derechosR{
+
+            width: 100%;
+            height: 5vh;
+
+            grid-area: datos1;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+        }
+
+    }
 }
