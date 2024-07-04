@@ -112,6 +112,10 @@
   font-family: Arsenal;
   src: url(../../fonts/Arsenal.ttf);
 }
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat.ttf);
+}
 .inicioNav {
   width: 100%;
   display: grid;
@@ -384,12 +388,12 @@
 
 .contenedorRequerimientos {
   width: 100%;
-  height: 100vh;
+  height: 45vh;
   background-color: rgb(29, 28, 28);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas: "colum1 colum1 colum1" "colum2 colum3 colum4" "colum5 colum6 colum7";
+  grid-template-areas: "colum1 colum1 colum1" "colum2 colum3 colum4" "colum6 colum6 colum6";
 }
 .contenedorRequerimientos .informacionRequerimientos {
   width: 100%;
@@ -410,4 +414,96 @@
   font-family: letraTexto-Hardline;
   font-size: 3rem;
   text-align: center;
+}
+.contenedorRequerimientos .contenedorCompacteras {
+  grid-area: colum2;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.contenedorRequerimientos .contenedorCompacteras .tituloCompacteras {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.contenedorRequerimientos .contenedorCompacteras .tituloCompacteras h3 {
+  font-size: 3rem;
+  font-family: Arsenal;
+}
+.contenedorRequerimientos .contenedorCompacteras .informacionCompacteras {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.contenedorRequerimientos .contenedorCompacteras .informacionCompacteras ul li {
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+.contenedorRequerimientos .contenedorEfectera {
+  grid-area: colum3;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  border-style: solid;
+  border-color: rgb(21, 0, 206);
+  border-top: 1px;
+  border-bottom: 1px;
+}
+.contenedorRequerimientos .contenedorEfectera .efectera {
+  margin-bottom: 10rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.contenedorRequerimientos .contenedorEfectera .efectera h3 {
+  font-size: 3rem;
+  font-family: Arsenal;
+}
+.contenedorRequerimientos .contenedorEfectera .efectera ul {
+  padding: 1rem;
+}
+.contenedorRequerimientos .contenedorEfectera .efectera ul li {
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+.contenedorRequerimientos .contenedorMixers {
+  grid-area: colum4;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.contenedorRequerimientos .contenedorMixers .tituloMixers {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.contenedorRequerimientos .contenedorMixers .tituloMixers h3 {
+  font-size: 3rem;
+  font-family: Arsenal;
+}
+.contenedorRequerimientos .contenedorMixers .informacionMixers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.contenedorRequerimientos .contenedorMixers .informacionMixers ul li {
+  font-size: 2rem;
+  font-family: Montserrat;
 }/*# sourceMappingURL=style.css.map */
