@@ -1,0 +1,41 @@
+.contenedorQuienSoy {
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: $colorNav;
+
+    padding: 9rem;
+
+    .biografia {
+
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 4rem;
+
+        .tituloBiografia{
+
+            font-family: $letraTexto-Extralight;
+            font-size: 2.7rem;
+
+        }
+
+        .textoBiografia{
+
+            font-family: $Montserrat;
+            font-size: 2.2rem;
+            
+            p{
+                padding: 1rem;
+            }
+
+        }
+    }
+
+}
