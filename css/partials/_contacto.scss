@@ -1,0 +1,179 @@
+*{
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+
+    .input {
+        background-color: $colorFondo1;
+    }
+
+    
+}
+
+.contenedorForm {
+
+    width: 100%;
+    height: 100vh;
+    background-color: $colorNav;
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .row{
+
+        width: 100%;
+        
+
+        
+        .form-group{
+            padding: 0.5rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+         
+            label {
+                padding: 1rem;
+            }
+
+            .email2 {
+                margin-left: 20px;
+            }
+
+            input {
+                border-radius: 5px;
+                padding: .5rem;
+            }
+
+            textarea{
+                border-radius: 5px;
+            }
+           
+
+            .nombre{
+                width: 50%;   
+                color: black; 
+                
+            }
+            .email{
+                width: 50%;
+                color: black; 
+            }
+            .mensaje{
+                width: 50%;
+                color: black; 
+            }
+
+            .boton {
+                width: 10%;
+                margin-left: 30%;
+                color: black; 
+            }
+        }
+    }
+
+    .col-sm-4{
+
+        .informacionContacto{
+
+            width: 100%;
+            
+            
+
+            p{
+                padding: 1rem;   
+            }
+
+            a{
+                color: rgb(60, 60, 255);
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+}
+
+
+
+.contenedorFooter3 {
+
+    width: 100%;
+    height: 35vh;
+
+    background-color: $colorNav;
+
+    .footer3{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr 1fr 1fr  ;
+        grid-template-areas: 
+        "datos1   datos1   datos1"
+        "columna4 columna2 columna3"
+        "columna4 columna2 columna3";
+
+        .logosRedes3 {
+
+            width: 100%;
+            grid-area: columna3;
+            
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+
+
+            .iconos{
+
+                padding: .5rem;
+               
+            }
+
+        }
+
+        .informacionExtraFooter3 {
+
+            grid-area: columna2;
+            width: 100%;
+
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 0rem;
+
+            gap: .5rem;
+
+
+        }
+
+        .derechosR3{
+
+            width: 100%;
+            height: 5vh;
+
+            grid-area: datos1;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+
+
+        }
+
+        
+
+    }
+}
+

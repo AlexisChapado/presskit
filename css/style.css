@@ -640,7 +640,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 .contenedorQuienSoy .biografia .tituloBiografia {
   font-family: letraTexto-Extralight;
@@ -652,4 +652,114 @@
 }
 .contenedorQuienSoy .biografia .textoBiografia p {
   padding: 1rem;
+}
+
+* a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+* .input {
+  background-color: rgb(27, 27, 27);
+}
+
+.contenedorForm {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorForm .row {
+  width: 100%;
+}
+.contenedorForm .row .form-group {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.contenedorForm .row .form-group label {
+  padding: 1rem;
+}
+.contenedorForm .row .form-group .email2 {
+  margin-left: 20px;
+}
+.contenedorForm .row .form-group input {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.contenedorForm .row .form-group textarea {
+  border-radius: 5px;
+}
+.contenedorForm .row .form-group .nombre {
+  width: 50%;
+  color: black;
+}
+.contenedorForm .row .form-group .email {
+  width: 50%;
+  color: black;
+}
+.contenedorForm .row .form-group .mensaje {
+  width: 50%;
+  color: black;
+}
+.contenedorForm .row .form-group .boton {
+  width: 10%;
+  margin-left: 30%;
+  color: black;
+}
+.contenedorForm .col-sm-4 .informacionContacto {
+  width: 100%;
+}
+.contenedorForm .col-sm-4 .informacionContacto p {
+  padding: 1rem;
+}
+.contenedorForm .col-sm-4 .informacionContacto a {
+  color: rgb(60, 60, 255);
+  text-decoration: underline;
+}
+
+.contenedorFooter3 {
+  width: 100%;
+  height: 35vh;
+  background-color: rgb(29, 28, 28);
+}
+.contenedorFooter3 .footer3 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "datos1   datos1   datos1" "columna4 columna2 columna3" "columna4 columna2 columna3";
+}
+.contenedorFooter3 .footer3 .logosRedes3 {
+  width: 100%;
+  grid-area: columna3;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.contenedorFooter3 .footer3 .logosRedes3 .iconos {
+  padding: 0.5rem;
+}
+.contenedorFooter3 .footer3 .informacionExtraFooter3 {
+  grid-area: columna2;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0rem;
+  gap: 0.5rem;
+}
+.contenedorFooter3 .footer3 .derechosR3 {
+  width: 100%;
+  height: 5vh;
+  grid-area: datos1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
