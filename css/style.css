@@ -453,11 +453,13 @@
 .seccion2Inicio .contenedorResumen .resumenRequerimiento button {
   background-color: rgb(27, 27, 27);
   text-shadow: 1px 1px 2px rgb(27, 27, 27);
-  padding: 0.7rem;
+  padding: 0.1rem;
   border-radius: 10px;
 }
 .seccion2Inicio .contenedorResumen .resumenRequerimiento button :hover {
-  color: rgb(88, 88, 88);
+  border-radius: 10px;
+  background-color: #212121;
+  color: rgb(201, 201, 201);
 }
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorResumen .resumenRequerimiento button {
@@ -539,11 +541,13 @@
 .seccion2Inicio .contenedorSets .resumenSets button {
   background-color: rgb(27, 27, 27);
   text-shadow: 1px 1px 2px black;
-  padding: 0.7rem;
+  padding: 0.1rem;
   border-radius: 10px;
 }
 .seccion2Inicio .contenedorSets .resumenSets button :hover {
-  color: rgb(88, 88, 88);
+  border-radius: 10px;
+  background-color: #212121;
+  color: rgb(201, 201, 201);
 }
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorSets .resumenSets button {
@@ -640,11 +644,13 @@
 .seccion2Inicio .contenedorBiografia .resumenBiografia button {
   background-color: #212121;
   text-shadow: 1px 1px 2px #212121;
-  padding: 0.7rem;
+  padding: 0.1rem;
   border-radius: 10px;
 }
 .seccion2Inicio .contenedorBiografia .resumenBiografia button :hover {
-  color: rgb(88, 88, 88);
+  border-radius: 10px;
+  background-color: #212121;
+  color: rgb(201, 201, 201);
 }
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorBiografia .resumenBiografia button {

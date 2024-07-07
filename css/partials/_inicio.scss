@@ -377,11 +377,13 @@
                 background-color: $colorFondo1;
                 text-shadow: 1px 1px 2px $colorFondo1;
 
-                padding: 0.7rem;
+                padding: 0.1rem;
                 border-radius: 10px;
 
                 :hover {
-                    color: rgb(88, 88, 88);
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
                 }
 
                 @include tablet {
@@ -491,11 +493,13 @@
                 background-color: $colorFondo1;
                 text-shadow: 1px 1px 2px black;
 
-                padding: 0.7rem;
+                padding: 0.1rem;
                 border-radius: 10px;
 
                 :hover {
-                    color: rgb(88, 88, 88);
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
                 }
                 
                 @include tablet {
@@ -627,12 +631,15 @@
                 background-color: #212121;
                 text-shadow: 1px 1px 2px #212121;
 
-                padding: 0.7rem;
+                padding: 0.1rem;
                 border-radius: 10px;
                 
 
                 :hover {
-                    color: rgb(88, 88, 88);
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
+                    
                     
                 }
                 @include tablet {
