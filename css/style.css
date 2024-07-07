@@ -140,6 +140,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.5s;
+}
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 480px) {
   .mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav {
@@ -202,6 +206,7 @@
   padding: 10px;
   width: 7rem;
   position: fixed;
+  z-index: 2;
 }
 @media screen and (max-width: 1300px) {
   .inicioNav .contenedorInicioLogo .contenedorLogoInicio img {
@@ -237,7 +242,7 @@
 @media screen and (max-width: 480px) {
   .inicioNav .contenedorInicioNav .ulInicio {
     display: flex;
-    justify-content: end;
+    justify-content: center;
   }
 }
 .inicioNav .contenedorInicioNav .ulInicio .liInicio {
@@ -451,6 +456,9 @@
   padding: 0.7rem;
   border-radius: 10px;
 }
+.seccion2Inicio .contenedorResumen .resumenRequerimiento button :hover {
+  color: rgb(88, 88, 88);
+}
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorResumen .resumenRequerimiento button {
     font-size: 0.5rem;
@@ -533,6 +541,9 @@
   text-shadow: 1px 1px 2px black;
   padding: 0.7rem;
   border-radius: 10px;
+}
+.seccion2Inicio .contenedorSets .resumenSets button :hover {
+  color: rgb(88, 88, 88);
 }
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorSets .resumenSets button {
@@ -631,6 +642,9 @@
   text-shadow: 1px 1px 2px #212121;
   padding: 0.7rem;
   border-radius: 10px;
+}
+.seccion2Inicio .contenedorBiografia .resumenBiografia button :hover {
+  color: rgb(88, 88, 88);
 }
 @media screen and (max-width: 1300px) {
   .seccion2Inicio .contenedorBiografia .resumenBiografia button {
@@ -769,7 +783,7 @@
   display: grid;
   grid-column: 2fr 2fr;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 2px 2px 10px black;
   border-top: 0;
   border-left: 0;
@@ -786,6 +800,7 @@
   padding: 10px;
   width: 7rem;
   position: fixed;
+  z-index: 2;
 }
 @media screen and (max-width: 1300px) {
   .inicioNav2 .contenedorInicioLogo2 .contenedorLogoInicio2 img {
@@ -801,6 +816,10 @@
   width: 100%;
   height: 10vh;
   background-color: rgba(29, 28, 28, 0.8823529412);
+  transition: all 0.5s;
+}
+.inicioNav2 .contenedorInicioNav2 :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
   .inicioNav2 .contenedorInicioNav2 {
@@ -853,6 +872,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 0.5fr 1fr;
   grid-template-areas: "colum1 colum1 colum1" "colum6 colum6 colum6" "colum2 colum3 colum4";
+  gap: 1rem;
 }
 @media screen and (max-width: 1300px) {
   .contenedorExperiencia {
@@ -864,6 +884,7 @@
 }
 @media screen and (max-width: 480px) {
   .contenedorExperiencia {
+    height: 167vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
@@ -880,7 +901,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 .contenedorExperiencia .informacionExperiencia h2 {
   font-family: letraTexto-Extralight;
@@ -918,13 +939,13 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: rgb(27, 27, 27);
-  border-bottom: 3px;
+  background-color: rgba(29, 28, 28, 0.8823529412);
+  border-bottom: 1px;
   border-style: solid;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom-color: rgb(21, 0, 206);
+  border-bottom-color: rgba(0, 0, 255, 0.534);
 }
 .contenedorExperiencia .contenedorEquipos .equipos h2 {
   font-size: 3rem;
@@ -942,71 +963,96 @@
     text-align: center;
   }
 }
-.contenedorExperiencia .contenedorCompacteras {
+.contenedorExperiencia .cajaCompacteras {
   grid-area: colum2;
-  background-color: rgb(27, 27, 27);
+  transition: all 0.5s;
+}
+.contenedorExperiencia .cajaCompacteras :hover {
+  transform: scale(1.07) translateY(-4px);
+}
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras {
+  grid-area: colum2;
+  background-color: rgba(29, 28, 28, 0.8823529412);
   width: 100%;
   height: 40vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  transition: all 0.5s;
+  box-shadow: 1px 1px 1000px black;
+  z-index: 0;
+}
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorCompacteras {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras {
     gap: 1rem;
     height: 30vh;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorCompacteras {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras {
     gap: 1rem;
     height: 20vh;
   }
 }
-.contenedorExperiencia .contenedorCompacteras .tituloCompacteras {
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras .tituloCompacteras {
   width: 100%;
   height: auto;
   text-align: center;
 }
-.contenedorExperiencia .contenedorCompacteras .tituloCompacteras h3 {
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras .tituloCompacteras h3 {
   font-size: 3rem;
   font-family: Arsenal;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorCompacteras .tituloCompacteras h3 {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras .tituloCompacteras h3 {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorCompacteras .tituloCompacteras h3 {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras .tituloCompacteras h3 {
     font-size: 1.7rem;
   }
 }
-.contenedorExperiencia .contenedorCompacteras .informacionCompacteras {
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras .informacionCompacteras {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
-.contenedorExperiencia .contenedorCompacteras .informacionCompacteras ul li {
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras .informacionCompacteras :hover {
+  transform: scale(1.07) translateY(-4px);
+}
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras .informacionCompacteras ul li {
   font-size: 2rem;
   font-family: Montserrat;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorCompacteras .informacionCompacteras ul li {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras .informacionCompacteras ul li {
     font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorCompacteras .informacionCompacteras ul li {
+  .contenedorExperiencia .cajaCompacteras .contenedorCompacteras .informacionCompacteras ul li {
     font-size: 1rem;
   }
 }
-.contenedorExperiencia .contenedorEfectera {
+.contenedorExperiencia .cajaEfectera {
   grid-area: colum3;
-  background-color: rgb(27, 27, 27);
+  transition: all 0.5s;
+  box-shadow: 1px 1px 10px black;
+  z-index: 1;
+}
+.contenedorExperiencia .cajaEfectera :hover {
+  transform: scale(1.07) translateY(-4px);
+}
+.contenedorExperiencia .cajaEfectera .contenedorEfectera {
+  grid-area: colum3;
+  background-color: rgba(29, 28, 28, 0.8823529412);
   width: 100%;
   height: 40vh;
   display: flex;
@@ -1014,120 +1060,131 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  border-style: solid;
-  border-color: rgb(21, 0, 206);
-  border-top: 1px;
-  border-bottom: 1px;
+  transition: all 0.5s;
+}
+.contenedorExperiencia .cajaEfectera .contenedorEfectera :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorEfectera {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera {
     gap: 1rem;
     height: 30vh;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorEfectera {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera {
     gap: 1rem;
     height: 30vh;
   }
 }
-.contenedorExperiencia .contenedorEfectera .efectera {
+.contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera {
   margin-bottom: 10rem;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.contenedorExperiencia .contenedorEfectera .efectera h3 {
+.contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera h3 {
   font-size: 3rem;
   font-family: Arsenal;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorEfectera .efectera h3 {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera h3 {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorEfectera .efectera h3 {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera h3 {
     font-size: 1.7rem;
     margin-top: 8rem;
   }
 }
-.contenedorExperiencia .contenedorEfectera .efectera ul {
+.contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera ul {
   padding: 1rem;
 }
-.contenedorExperiencia .contenedorEfectera .efectera ul li {
+.contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera ul li {
   font-size: 2rem;
   font-family: Montserrat;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorEfectera .efectera ul li {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera ul li {
     font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorEfectera .efectera ul li {
+  .contenedorExperiencia .cajaEfectera .contenedorEfectera .efectera ul li {
     font-size: 1rem;
   }
 }
-.contenedorExperiencia .contenedorMixers {
+.contenedorExperiencia .cajaMixers {
   grid-area: colum4;
-  background-color: rgb(27, 27, 27);
+  transition: all 0.5s;
+  box-shadow: 1px 1px 1000px black;
+}
+.contenedorExperiencia .cajaMixers :hover {
+  transform: scale(1.07) translateY(-4px);
+}
+.contenedorExperiencia .cajaMixers .contenedorMixers {
+  grid-area: colum4;
+  background-color: rgba(29, 28, 28, 0.8823529412);
   width: 100%;
   height: 40vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  transition: all 0.5s;
+}
+.contenedorExperiencia .cajaMixers .contenedorMixers :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorMixers {
+  .contenedorExperiencia .cajaMixers .contenedorMixers {
     gap: 1rem;
     height: 30vh;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorMixers {
+  .contenedorExperiencia .cajaMixers .contenedorMixers {
     gap: 1rem;
     height: 20vh;
   }
 }
-.contenedorExperiencia .contenedorMixers .tituloMixers {
+.contenedorExperiencia .cajaMixers .contenedorMixers .tituloMixers {
   width: 100%;
   height: auto;
   text-align: center;
 }
-.contenedorExperiencia .contenedorMixers .tituloMixers h3 {
+.contenedorExperiencia .cajaMixers .contenedorMixers .tituloMixers h3 {
   font-size: 3rem;
   font-family: Arsenal;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorMixers .tituloMixers h3 {
+  .contenedorExperiencia .cajaMixers .contenedorMixers .tituloMixers h3 {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorMixers .tituloMixers h3 {
+  .contenedorExperiencia .cajaMixers .contenedorMixers .tituloMixers h3 {
     font-size: 1.7rem;
   }
 }
-.contenedorExperiencia .contenedorMixers .informacionMixers {
+.contenedorExperiencia .cajaMixers .contenedorMixers .informacionMixers {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-.contenedorExperiencia .contenedorMixers .informacionMixers ul li {
+.contenedorExperiencia .cajaMixers .contenedorMixers .informacionMixers ul li {
   font-size: 2rem;
   font-family: Montserrat;
 }
 @media screen and (max-width: 1300px) {
-  .contenedorExperiencia .contenedorMixers .informacionMixers ul li {
+  .contenedorExperiencia .cajaMixers .contenedorMixers .informacionMixers ul li {
     font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedorExperiencia .contenedorMixers .informacionMixers ul li {
+  .contenedorExperiencia .cajaMixers .contenedorMixers .informacionMixers ul li {
     font-size: 1rem;
   }
 }
@@ -1145,7 +1202,6 @@
 }
 @media screen and (max-width: 480px) {
   .contenedorFooter2 {
-    margin-top: 17rem;
     height: auto;
   }
 }
@@ -1276,6 +1332,7 @@
   padding: 10px;
   width: 7rem;
   position: fixed;
+  z-index: 2;
 }
 @media screen and (max-width: 1300px) {
   .inicioNav3 .contenedorInicioLogo3 .contenedorLogoInicio3 img {
@@ -1291,6 +1348,10 @@
   width: 100%;
   height: 10vh;
   background-color: rgba(29, 28, 28, 0.8823529412);
+  transition: all 0.5s;
+}
+.inicioNav3 .contenedorInicioNav3 :hover {
+  transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
   .inicioNav3 .contenedorInicioNav3 {

@@ -34,6 +34,8 @@
                 width: 7rem;
                 position: fixed;
 
+                z-index: 2;
+
                 @include tablet {
                     width: 7rem;
                 }
@@ -53,6 +55,7 @@
         height: 10vh;
     
         background-color: $colorNav2;
+
 
         @include tablet {
 
@@ -77,6 +80,7 @@
     
             display: flex;
             justify-content: center;
+            
 
             @include tablet {
 
@@ -84,7 +88,7 @@
             
             @include mobile {
                 display: flex;
-                justify-content: end;
+                justify-content: center;
                 
             }
             
@@ -173,7 +177,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
 
     .informacionSet {
@@ -377,6 +380,10 @@
                 padding: 0.7rem;
                 border-radius: 10px;
 
+                :hover {
+                    color: rgb(88, 88, 88);
+                }
+
                 @include tablet {
 
                     font-size: .5rem;
@@ -486,6 +493,10 @@
 
                 padding: 0.7rem;
                 border-radius: 10px;
+
+                :hover {
+                    color: rgb(88, 88, 88);
+                }
                 
                 @include tablet {
 
@@ -618,6 +629,12 @@
 
                 padding: 0.7rem;
                 border-radius: 10px;
+                
+
+                :hover {
+                    color: rgb(88, 88, 88);
+                    
+                }
                 @include tablet {
 
                     font-size: .5rem;
@@ -809,4 +826,9 @@
 
     }
 }
+
+
+
+
+
 

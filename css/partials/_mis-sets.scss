@@ -35,6 +35,8 @@
                 width: 7rem;
                 position: fixed;
 
+                z-index: 2;
+
                 @include tablet {
                     width: 7rem;
                 }
@@ -54,6 +56,11 @@
         height: 10vh;
     
         background-color: $colorNav2;
+
+        transition: all 0.5s;
+            :hover{
+                transform: scale(1.07) translateY(-4px);
+            }
 
         @include tablet {
 
