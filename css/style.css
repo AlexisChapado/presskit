@@ -1839,6 +1839,7 @@
 }
 .contenedorForm .row .form-group .mensaje {
   width: 50%;
+  height: 10rem;
   color: black;
 }
 @media screen and (max-width: 1300px) {

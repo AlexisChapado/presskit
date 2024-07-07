@@ -82,6 +82,7 @@
             }
             .mensaje{
                 width: 50%;
+                height: 10rem;
                 color: black; 
                 @include tablet {
                     height: 10rem;
