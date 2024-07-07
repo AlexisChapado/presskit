@@ -1,8 +1,147 @@
+/********************************************/
+.inicioNav3 {
+    width: 100%;
+
+    display: grid;
+    grid-column: 2fr 2fr;
+    position: fixed;
+    z-index: 2;
+
+    box-shadow: 2px 2px 10px black;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-bottom-color: rgb(0, 0, 170);
+
+    
+
+    .contenedorInicioLogo3{
+
+        width: 30%;
+    
+        background-color: $colorNav2;
+
+        
+    
+        .contenedorLogoInicio3 {
+    
+            img {
+
+                padding: 10px;
+    
+                width: 7rem;
+                position: fixed;
+
+                @include tablet {
+                    width: 7rem;
+                }
+                
+                @include mobile {
+                    width: 5rem;
+                }
+               
+            }
+        }
+    }
+    
+    
+    .contenedorInicioNav3 {
+    
+        width: 100%;
+        height: 10vh;
+    
+        background-color: $colorNav2;
+
+        @include tablet {
+
+            height: 8vh;
+
+        }
+        
+        @include mobile {
+
+            height: 7vh;
+            
+        }
+
+        
+    
+    
+        .ulInicio3 {
+    
+            width: 100%;
+
+            padding: 1rem;
+    
+            display: flex;
+            justify-content: center;
+
+            @include tablet {
+
+            }
+            
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                padding-left: 6rem;
+                
+            }
+            
+            
+            
+            .liInicio3 {           
+                           
+                padding: 1rem;
+                font-size: 1.7rem;
+
+                @include tablet {
+                    font-size: 1.5rem;
+                    padding: .5rem ;
+                }
+
+                @include mobile{
+                    font-size: 0.9rem;
+                    padding: 0.3rem;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                }
+                
+    
+            }
+    
+    
+        }
+    }
+}
+
+
+
+
+
+/********************************************/
+
+
 .contenedorSets {
     width: 100%;
     height: 100vh;
     background-color: $colorFondo1;
     padding: 8rem;
+
+    @include tablet {
+        padding: 6rem;
+        padding-top: 12rem;
+        height: 80vh;
+    }
+    
+    @include mobile {
+        height: 70vh;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
 
     
     .tituloSets {
@@ -13,6 +152,16 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
+        @include tablet {
+
+        }
+        
+        @include mobile {
+            
+        }
+
+        
         
 
         .titulo{
@@ -35,6 +184,16 @@
 
             border-bottom-color: $colorLineas;
 
+            @include tablet {
+                font-size: 3rem;
+            }
+            
+            @include mobile {
+
+                font-size: 2rem;
+                
+            }
+
 
 
         }
@@ -49,6 +208,200 @@
         text-align: center;
 
         text-shadow: 2px 2px 3px black;
+
+        @include tablet {
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        
+        @include mobile {
+
+            font-size: 1rem;
+            
+        }
     }
 
+}
+
+
+/**********************************************/
+
+
+
+.contenedorFooterSet {
+
+    width: 100%;
+    height: 35vh;
+    background-color: $colorFondo1;
+
+    @include tablet {
+        width: 100%;
+        height: auto;
+
+    }
+    
+    @include mobile {
+        
+        width: 100%;
+        
+        
+    }
+
+   
+
+    .footerSet{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:0.5fr 1fr 1fr  ;
+        grid-template-areas: 
+        "datos1   datos1   datos1"
+        "columna1 columna2 columna3"
+        "columna4 columna2 columna3";
+
+        @include tablet {
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(6.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            ".        columna4  .    "
+            ".        columna4  .    "
+            ".        columna2  .    "
+            ".        columna2  .    "
+            ".        columna3  .    "
+            ".        columna3  .    ";
+            
+        }
+
+        @include mobile {
+
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(5.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            "columna4 columna4 columna4"
+            "columna4 columna4 columna4"
+            "columna2 columna2 columna2"
+            "columna3  columna3  columna3";
+        }
+
+        .logosRedesSet {
+
+            width: 100%;
+            grid-area: columna3;
+            
+            
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: end;
+
+            @include tablet {
+
+                width: 100%;
+                height: auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                
+                padding: 1rem;
+                
+
+            }
+            
+            @include mobile {
+
+                width: 100%;
+                padding-left: 3rem;
+                padding-top: 2rem;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+
+                padding: 1rem;
+
+                
+            }
+
+
+            .iconos{
+
+                padding: .5rem;
+               
+            }
+
+        }
+
+        .informacionExtraFooterSet {
+
+            width: 100%;
+            grid-area: columna2;
+            
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 2rem;
+
+            gap: .5rem;
+
+            @include tablet {
+                margin-top: 0;
+                text-align: center;
+            }
+            
+            @include mobile {
+
+                margin-top: 0;
+                text-align: center;
+                gap: 0;
+
+                
+                
+            }
+
+        }
+
+        .derechosRSet{
+
+            width: 100%;
+            height: 5vh;
+
+            grid-area: datos1;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+
+            @include tablet {
+
+                text-align: center;
+
+            }
+            
+            @include mobile {
+                
+                font-size: 1rem;
+                text-align: center;
+                
+            }
+
+        }
+
+    }
 }

@@ -59,21 +59,55 @@
             .nombre{
                 width: 50%;   
                 color: black; 
+
+                @include tablet {
+
+                }
+                
+                @include mobile {
+                    width: 100%;
+                }
                 
             }
             .email{
                 width: 50%;
                 color: black; 
+                @include tablet {
+
+                }
+                
+                @include mobile {
+                    width: 100%;   
+                }
             }
             .mensaje{
                 width: 50%;
                 color: black; 
+                @include tablet {
+                    height: 10rem;
+                }
+                
+                @include mobile {
+                    width: 100%;
+                    height: 7rem;
+                }
             }
 
             .boton {
                 width: 10%;
                 margin-left: 30%;
                 color: black; 
+
+                @include tablet {
+                    width: 15%;
+                    margin-left: 32%;
+
+                }
+                
+                @include mobile {
+                    width: 5rem;
+                    margin-left: 5.8rem;
+                }
             }
         }
     }
@@ -102,26 +136,80 @@
 
 
 
-.contenedorFooter3 {
+
+
+/**********************************************/
+
+
+
+.contenedorFooterContacto {
 
     width: 100%;
-    height: 35vh;
+    height: 40vh;
+    background-color: $colorFondo1;
 
-    background-color: $colorNav;
+    @include tablet {
+        width: 100%;
+        height: auto;
 
-    .footer3{
+    }
+    
+    @include mobile {
+        
+        width: 100%;
+        
+        
+    }
+
+   
+
+    .footerContacto{
         width: 100%;
         height: auto;
 
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows:1fr 1fr 1fr  ;
+        grid-template-rows:0.5fr 1fr 1fr  ;
         grid-template-areas: 
         "datos1   datos1   datos1"
-        "columna4 columna2 columna3"
+        "columna1 columna2 columna3"
         "columna4 columna2 columna3";
 
-        .logosRedes3 {
+        @include tablet {
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(6.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            ".        columna4  .    "
+            ".        columna4  .    "
+            ".        columna2  .    "
+            ".        columna2  .    "
+            ".        columna3  .    "
+            ".        columna3  .    ";
+            
+        }
+
+        @include mobile {
+
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(5.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            "columna4 columna4 columna4"
+            "columna4 columna4 columna4"
+            "columna2 columna2 columna2"
+            "columna3  columna3  columna3";
+        }
+
+        .logosRedesContacto {
 
             width: 100%;
             grid-area: columna3;
@@ -129,7 +217,37 @@
             
             display: flex;
             justify-content: space-around;
+            flex-direction: row;
             align-items: end;
+
+            @include tablet {
+
+                width: 100%;
+                height: auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                
+                padding: 1rem;
+                
+
+            }
+            
+            @include mobile {
+
+                width: 100%;
+                padding-left: 3rem;
+                padding-top: 2rem;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+
+                padding: 1rem;
+
+                
+            }
 
 
             .iconos{
@@ -140,24 +258,39 @@
 
         }
 
-        .informacionExtraFooter3 {
+        .informacionExtraFooterContacto {
 
-            grid-area: columna2;
             width: 100%;
+            grid-area: columna2;
+            
 
             display: flex;
-            justify-content: end;
+            justify-content: center;
             flex-direction: column;
             align-items: center;
 
-            margin-top: 0rem;
+            margin-top: 2rem;
 
             gap: .5rem;
 
+            @include tablet {
+                margin-top: 0;
+                text-align: center;
+            }
+            
+            @include mobile {
+
+                margin-top: 0;
+                text-align: center;
+                gap: 0;
+
+                
+                
+            }
 
         }
 
-        .derechosR3{
+        .derechosRContacto{
 
             width: 100%;
             height: 5vh;
@@ -169,13 +302,20 @@
             align-items: center;
             font-size: 1.3rem;
 
+            @include tablet {
+
+                text-align: center;
+
+            }
+            
+            @include mobile {
+                
+                font-size: 1rem;
+                text-align: center;
+                
+            }
 
         }
 
-        
-
     }
-
-    
 }
-
