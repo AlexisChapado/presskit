@@ -213,7 +213,7 @@
                     text-align: center;
 
                     transition: all 0.5s;
-                        :hover{
+                        &:hover{
                              transform: scale(1.07) translateY(-4px);
                         }
 

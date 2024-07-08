@@ -58,7 +58,7 @@
         background-color: $colorNav2;
 
         transition: all 0.5s;
-        :hover{
+        &:hover{
             transform: scale(1.07) translateY(-4px);
         }
 
@@ -294,7 +294,7 @@
     .cajaCompacteras{
         grid-area: colum2;
         transition: all 0.5s;
-        :hover{
+        &:hover{
             transform: scale(1.07) translateY(-4px);
         }
         
@@ -316,7 +316,7 @@
             box-shadow: 1px 1px 1000px black;
 
             z-index: 0;
-            :hover{
+            &:hover{
             transform: scale(1.07) translateY(-4px);
             }
                 
@@ -391,7 +391,7 @@
         transition: all 0.5s;
         box-shadow: 1px 1px 10px black;
         z-index: 1;
-        :hover{
+        &:hover{
             transform: scale(1.07) translateY(-4px);
         }
 
@@ -411,7 +411,7 @@
             gap: 2rem;    
 
             transition: all 0.5s;
-            :hover{
+            &:hover{
                 transform: scale(1.07) translateY(-4px);
             }
             
@@ -479,7 +479,7 @@
         transition: all 0.5s;
         box-shadow: 1px 1px 1000px black;
         
-            :hover{
+            &:hover{
                 transform: scale(1.07) translateY(-4px);
                 }
         
@@ -496,7 +496,7 @@
             justify-content: center;
     
             transition: all 0.5s;
-                :hover{
+                &:hover{
                         transform: scale(1.07) translateY(-4px);
                     }
     

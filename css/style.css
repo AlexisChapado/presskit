@@ -142,7 +142,7 @@
   text-align: center;
   transition: all 0.5s;
 }
-.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav :hover {
+.mainBienvenida .contenedorBienvenida .contenedorNav .navBienvenida .barraNav:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 480px) {
@@ -456,7 +456,7 @@
   padding: 0.1rem;
   border-radius: 10px;
 }
-.seccion2Inicio .contenedorResumen .resumenRequerimiento button :hover {
+.seccion2Inicio .contenedorResumen .resumenRequerimiento button:hover {
   border-radius: 10px;
   background-color: #212121;
   color: rgb(201, 201, 201);
@@ -544,7 +544,7 @@
   padding: 0.1rem;
   border-radius: 10px;
 }
-.seccion2Inicio .contenedorSets .resumenSets button :hover {
+.seccion2Inicio .contenedorSets .resumenSets button:hover {
   border-radius: 10px;
   background-color: #212121;
   color: rgb(201, 201, 201);
@@ -647,7 +647,7 @@
   padding: 0.1rem;
   border-radius: 10px;
 }
-.seccion2Inicio .contenedorBiografia .resumenBiografia button :hover {
+.seccion2Inicio .contenedorBiografia .resumenBiografia button:hover {
   border-radius: 10px;
   background-color: #212121;
   color: rgb(201, 201, 201);
@@ -824,7 +824,7 @@
   background-color: rgba(29, 28, 28, 0.8823529412);
   transition: all 0.5s;
 }
-.inicioNav2 .contenedorInicioNav2 :hover {
+.inicioNav2 .contenedorInicioNav2:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
@@ -974,7 +974,7 @@
   grid-area: colum2;
   transition: all 0.5s;
 }
-.contenedorExperiencia .cajaCompacteras :hover {
+.contenedorExperiencia .cajaCompacteras:hover {
   transform: scale(1.07) translateY(-4px);
 }
 .contenedorExperiencia .cajaCompacteras .contenedorCompacteras {
@@ -990,7 +990,7 @@
   box-shadow: 1px 1px 1000px black;
   z-index: 0;
 }
-.contenedorExperiencia .cajaCompacteras .contenedorCompacteras :hover {
+.contenedorExperiencia .cajaCompacteras .contenedorCompacteras:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
@@ -1054,7 +1054,7 @@
   box-shadow: 1px 1px 10px black;
   z-index: 1;
 }
-.contenedorExperiencia .cajaEfectera :hover {
+.contenedorExperiencia .cajaEfectera:hover {
   transform: scale(1.07) translateY(-4px);
 }
 .contenedorExperiencia .cajaEfectera .contenedorEfectera {
@@ -1069,7 +1069,7 @@
   gap: 2rem;
   transition: all 0.5s;
 }
-.contenedorExperiencia .cajaEfectera .contenedorEfectera :hover {
+.contenedorExperiencia .cajaEfectera .contenedorEfectera:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
@@ -1127,7 +1127,7 @@
   transition: all 0.5s;
   box-shadow: 1px 1px 1000px black;
 }
-.contenedorExperiencia .cajaMixers :hover {
+.contenedorExperiencia .cajaMixers:hover {
   transform: scale(1.07) translateY(-4px);
 }
 .contenedorExperiencia .cajaMixers .contenedorMixers {
@@ -1141,7 +1141,7 @@
   justify-content: center;
   transition: all 0.5s;
 }
-.contenedorExperiencia .cajaMixers .contenedorMixers :hover {
+.contenedorExperiencia .cajaMixers .contenedorMixers:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
@@ -1357,7 +1357,7 @@
   background-color: rgba(29, 28, 28, 0.8823529412);
   transition: all 0.5s;
 }
-.inicioNav3 .contenedorInicioNav3 :hover {
+.inicioNav3 .contenedorInicioNav3:hover {
   transform: scale(1.07) translateY(-4px);
 }
 @media screen and (max-width: 1300px) {
