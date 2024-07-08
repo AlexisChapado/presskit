@@ -952,6 +952,7 @@
   border-left: 0;
   border-right: 0;
   border-bottom-color: rgba(0, 0, 255, 0.534);
+  z-index: 2;
 }
 .contenedorExperiencia .contenedorEquipos .equipos h2 {
   font-size: 3rem;
