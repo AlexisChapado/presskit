@@ -1,6 +1,8 @@
-@import "./partials/variables";
+@import "./partials/media-queries";
 
 @import "./partials/_restart.scss";
+
+@import "./partials/variables";
 
 
 @import "./partials/bienvenida";
@@ -10,5 +12,5 @@
 @import "./partials/mis-sets";
 @import "./partials/quiensoy";
 @import "./partials/contacto";
-@import "./partials/media-queries";
+
 
