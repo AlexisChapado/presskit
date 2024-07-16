@@ -85,7 +85,7 @@
                         .genero {                      
                             
                             font-size: 2rem;
-                            font-family: $letraTexto-Extralight;
+                            font-family: letraTexto-Extralight;
 
                             @include tablet {
                                 font-size: 1rem;
@@ -127,7 +127,7 @@
                         .logoNombre {
                             
                             text-shadow: 5px 5px 10px black;
-                            font-family: $letraLogo;
+                            font-family: letraLogo;
 
                             
                         }
