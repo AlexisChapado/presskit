@@ -112,7 +112,7 @@
                         align-items: center;
 
                         font-family: letraLogo;
-                        font-size: 6rem;
+                        font-size: 3rem;
 
                         @include tablet {
                             font-size: 4rem;
@@ -127,7 +127,7 @@
                         .logoNombre {
                             
                             text-shadow: 5px 5px 10px black;
-                            font-family: letraLogo;
+                            font-family: $letraLogo;
 
                             
                         }
