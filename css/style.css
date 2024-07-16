@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
+
   color: white;
 }
 * button {
   color: black;
 }
+
+
 
 .mainBienvenida {
   background-color: rgb(29, 28, 28);
@@ -2041,17 +2042,7 @@
     text-align: center;
   }
 
-@import "./partials/media-queries";
-@import "./partials/variables";
-@import "./partials/fonts";
-@import "./partials/_restart.scss";
 
-@import "./partials/bienvenida";
-@import "./partials/inicio";
-@import "./partials/experiencia";
-@import "./partials/mis-sets";
-@import "./partials/quiensoy";
-@import "./partials/contacto";
 
 
 
