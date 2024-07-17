@@ -1,4 +1,14 @@
+@import "./partials/media-queries";
+@import "./partials/variables";
+@import "./partials/fonts";
+@import "./partials/_restart.scss";
 
+@import "./partials/bienvenida";
+@import "./partials/inicio";
+@import "./partials/experiencia";
+@import "./partials/mis-sets";
+@import "./partials/quiensoy";
+@import "./partials/contacto";
 
 * {
   margin: 0;
@@ -2049,15 +2059,5 @@
 }
 
 
-@import "./partials/media-queries";
-@import "./partials/variables";
-@import "./partials/fonts";
-@import "./partials/_restart.scss";
 
-@import "./partials/bienvenida";
-@import "./partials/inicio";
-@import "./partials/experiencia";
-@import "./partials/mis-sets";
-@import "./partials/quiensoy";
-@import "./partials/contacto";
 /*# sourceMappingURL=style.css.map */
