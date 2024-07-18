@@ -85,7 +85,8 @@
                         .genero {                      
                             
                             font-size: 2rem;
-                            font-family: letraTexto-Extralight;
+
+                            @extend %letraTexto-Extralight;
 
                             @include tablet {
                                 font-size: 1rem;
@@ -97,8 +98,6 @@
                                 
                                 
                             }
-    
-    
                         }
                     }   
 
